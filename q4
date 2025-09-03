@@ -1,0 +1,49 @@
+<<<<<<< HEAD
+import java.util.Scanner;
+public class Question4 {    
+public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num = obj.nextInt();
+        boolean isPrime = true;
+
+        if (num < 2) {
+            isPrime = false;
+        } else {
+            int limit = (int)Math.sqrt(num);
+            for (int i = 2; i <= limit; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        System.out.println(isPrime ? "PRIME" : "NOT PRIME");
+        obj.close();
+    }
+}
+=======
+import java.util.Scanner;
+public class Question4 {    
+public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num = obj.nextInt();
+        boolean isPrime = true;
+
+        if (num < 2) {
+            isPrime = false;
+        } else {
+            int limit = (int)Math.sqrt(num);
+            for (int i = 2; i <= limit; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        System.out.println(isPrime ? "PRIME" : "NOT PRIME");
+        obj.close();
+    }
+}
+>>>>>>> 11a676a (first commit)
